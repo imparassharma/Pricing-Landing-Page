@@ -26,6 +26,10 @@ switch1.addEventListener("click" , function(){
     slider.oninput= function(){
         price.innerHTML = '$'+this.value*10+'.00' + '<span>/month</span>';
         pageno.innerHTML = Math.round(this.value*6.25*10)+"K"+" PAGEVIEWS";
+        var x = slider.value*3;
+        console.log(x);
+        var bg = 'linear-gradient(90deg,hsl(174, 77%, 80%)'+ x + '%, rgb(214,214,214)' + x + '%)';
+        slider.style.background = bg;
     }   
 });
 
@@ -39,5 +43,9 @@ switch2.addEventListener("click" , function(){
     slider.oninput= function(){
         price.innerHTML = '$'+this.value+'.00' + '<span>/month</span>';
         pageno.innerHTML = Math.round(this.value*6.25)+"K"+" PAGEVIEWS";
+        var x = slider.value*3.2;
+        console.log(x);
+        var bg = 'linear-gradient(90deg,hsl(174, 77%, 80%)'+ x + '%, rgb(214,214,214)' + x + '%)';
+        slider.style.background = bg;
     }
 });

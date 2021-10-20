@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/124816636a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="text-section">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+
+    <div class="slider-container">
+        <div class="page-views">
+            <p id="pageno">20K PAGEVIEWS</p>
+        </div>
+        <input type="range" min="2" step="1" max="30" id="range" class="slider">
+        <h1 id="price">$8.00 <span>/month</span></h1>
+
+        <div class="billing-row">
+            <p>Monthly Billing</p>
+            <div class="toggle">
+                <div class="circle1 circle show" id="switch1"></div>
+                <div class="circle2 circle" id="switch2"></div>
+            </div>
+            <p>Yearly Billing <span>-25%</span> <span2 id="discount">discount</span2></p>
+        </div>
+
+        <hr size="1" noshade="">
+
+        <div class="bottom-section">
+            <div class="features">
+                <div class="row">
+                    <img src="images/icon-check.svg" alt="">
+                    <p>Unlimited websites</p>
+                </div>
+                <div class="row">
+                    <img src="images/icon-check.svg" alt="">
+                    <p>100% data ownership</p>
+                </div>
+                <div class="row">
+                    <img src="images/icon-check.svg" alt="">
+                    <p>Email Reports</p>
+                </div>
+            </div>
+
+            <button>Start my trial</button>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
